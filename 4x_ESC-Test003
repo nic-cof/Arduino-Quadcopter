@@ -1,0 +1,25 @@
+#include <Servo.h>
+
+int value = 0;                        // Set value equal to zero
+Servo motor_A, motor_B, motor_C, motor_D;
+
+void setup() {
+  motor_A.attach(2);
+  motor_B.attach(3);
+  motor_C.attach(4);
+  motor_D.attach(5);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  // First connect ESC without arming. Then open Serial and follow instructions.
+
+  motor_A.writeMicroseconds(value);   // This Value is controlled by user input from Serial Port
+  motor_B.writeMicroseconds(value);
+  motor_C.writeMicroseconds(value);
+  motor_D.writeMicroseconds(value);
+  
+  if(Serial.available())
+    value = Serial.parseInt();        // Parse Int from Serial
+}
