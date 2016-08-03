@@ -10,6 +10,11 @@ Thorough testing of individual components in quick iterations. Build from simple
 Combine individual codes into final flight code.
 
 Progress: 
+(AUG 3, 2016) U2
+Second code failed. Found instructable with ESC code, worked like a charm. Started with ESC_A. Added ESC_B, _C, and _D after.
+All four can be controlled from a single input.
+Next iteration will add bluetooth to remove tether.
+
 (AUG 3, 2016)
 Used old code from ESC and could not get it to function. Trying new method.
 
