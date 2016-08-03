@@ -1,0 +1,20 @@
+// ESC calibration test 002
+
+#include <Servo.h>
+
+int value = 0;                        // Set value equal to zero
+Servo motor_A;
+
+void setup() {
+  motor_A.attach(2);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // First connect ESC without arming. Then open Serial and follow instructions.
+
+  motor_A.writeMicroseconds(value);   // This Value is controlled by user input from Serial Port
+
+  if(Serial.available())
+    value = Serial.parseInt();        // Parse Int from Serial
+}
