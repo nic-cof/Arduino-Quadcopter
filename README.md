@@ -9,7 +9,10 @@ Code will be stored from each test to track progress. Use old code to learn from
 Thorough testing of individual components in quick iterations. Build from simple code and add more complex elements.
 Combine individual codes into final flight code.
 
-Progress: 
+Progress:
+(Oct 14, 2016)
+Apparently didn't update this when I flew the quad. Several successful test flights manually trimming for level (tethered) flight. Switched over to autonomous control and immediately flipped over. One of the motor arms broke and due to the way I assembled V1.2 frame I needed to make an entirely new one. Chalk that one up to learning. New frame is completely designed, just needs to be printed and assembled; this time not using glue.
+
 (AUG 18, 2016)
 Finished quadcopter frame ysterday. Needed a purpose built frame to accurately test components. Uploaded first iteration IMU code. Uses complementary filter to prevent drift in IMU data. Need to adjust filter values as there is still drift. Bluetooth breakout arrives today.
 
